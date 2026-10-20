@@ -16,10 +16,11 @@
       section highlighting, shared `SectionHeading`, project search moved into
       the Projects section
 - [x] Project renamed to `daudki`
+- [x] Added AstroVexus and Agrovet Manager, live links for 1xBet Global, Cognitive Mirror,
+      Smart VLE and VidGet, card images from the project repos
 
 ## Next up
 - [ ] Add screenshots for the project cards that have none
-- [ ] Live site URLs for Sportsbet MN and 1xBet Global
 - [ ] Deploy target (GitHub Pages or Vercel) and add the live URL here
 - [ ] SEO: OG image and canonical URL in `index.html`
 - [ ] Create the repo and continue with git patches

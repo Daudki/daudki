@@ -16,14 +16,20 @@ Real images live in `public/images/` (WebP) and are mapped in
 | `vexus-security-logo.webp` | VEXUS card logo |
 | `portrait-leaning.webp` | FAQ background (md and up) |
 | `portrait-gradient.webp` | Contact background |
+| `logo-astrovexus.webp` | AstroVexus card logo |
+| `logo-agrovet.webp` | Agrovet Manager card logo |
+| `logo-vidget.webp` | VidGet card logo |
+| `project-sportsbet.webp` | Sportsbet MN card cover |
+| `project-1xbet.webp` | 1xBet Global card cover |
 
 ## Not used
 `bg-black-cubes.webp` is not referenced anywhere.
 
 ## Projects without images
-Only VEXUS has an image. The other project cards are text only, so there are
-no external placeholder photos left. To give a card an image, set `image` (and
-optionally `featured: true` for a wide card) in `projects.ts`.
+Iyunga Technical, ICN Platform, Cognitive Mirror, InsightFlow and Smart VLE have
+no image yet, so their cards are text only. Set `image` (wide cover) or `logo`
+(centered tile) in `projects.ts` to give a card a media header. `featured: true`
+makes a card full width with a side image.
 
 ## Guidelines
 - Dark, low detail backgrounds work best

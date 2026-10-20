@@ -19,6 +19,27 @@ export default function ProjectCard({ project, number }: Props) {
         hasImage ? 'flex-col-reverse md:col-span-2 md:grid md:grid-cols-[1.1fr_0.9fr]' : 'flex-col'
       }`}
     >
+      {!hasImage && (project.image || project.logo) && (
+        <div
+          className="relative flex h-40 items-center justify-center overflow-hidden bg-ink-2"
+          style={{ backgroundImage: `radial-gradient(60% 90% at 50% 0%, ${project.accent}2e, transparent 75%)` }}
+        >
+          {project.image ? (
+            <>
+              <img src={project.image} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent" />
+            </>
+          ) : (
+            <img
+              src={project.logo}
+              alt={`${project.title} logo`}
+              loading="lazy"
+              className="h-20 w-20 rounded-2xl object-cover shadow-2xl ring-1 ring-white/15"
+            />
+          )}
+        </div>
+      )}
+
       <div className="flex h-full flex-col p-6 sm:p-8">
         <div className="mb-6 flex items-center justify-between gap-3">
           <span className="font-mono text-xs text-slate-500">{number}</span>
